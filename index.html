@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RakshakX - India's Most Advanced Personal Safety App</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF3D3D',secondary:'#007AFF'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+background-color: #121212;
+color: #ffffff;
+}
+.grid-pattern {
+background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+background-size: 30px 30px;
+}
+.app-screenshot {
+filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
+}
+.glow {
+box-shadow: 0 0 15px rgba(255, 61, 61, 0.5);
+}
+.glow-blue {
+box-shadow: 0 0 15px rgba(0, 122, 255, 0.5);
+}
+.feature-card:hover {
+transform: translateY(-5px);
+transition: transform 0.3s ease;
+}
+.content-area {
+padding-top: 64px;
+padding-bottom: 70px;
+}
+</style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="fixed top-0 w-full bg-[#0A0A0A] border-b border-gray-800 z-50 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<span class="text-xl font-['Pacifico'] text-white">logo</span>
+</div>
+<div class="flex items-center space-x-4">
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-800">
+<i class="ri-menu-line text-white ri-lg"></i>
+</button>
+</div>
+</nav>
+<div class="content-area">
+<!-- Hero Section -->
+<section class="grid-pattern min-h-[600px] px-4 pt-10 pb-16 flex flex-col items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-secondary/10 opacity-30"></div>
+</div>
+<div class="relative z-10 text-center mt-8">
+<h1 class="text-3xl font-bold mb-3">Your Life. Your Safety. Our Mission.</h1>
+<p class="text-gray-300 mb-6 px-2">RakshakX is India's most advanced SOS app — designed for real-time emergency response with just one tap.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+<button class="!rounded-button bg-primary hover:bg-primary/90 text-white py-3 px-6 font-semibold flex items-center justify-center gap-2 glow">
+<i class="ri-download-line ri-lg w-5 h-5 flex items-center justify-center"></i>
+Download Now
+</button>
+<button class="!rounded-button bg-transparent border-2 border-secondary text-secondary hover:bg-secondary/10 py-3 px-6 font-semibold flex items-center justify-center gap-2">
+<i class="ri-vip-crown-line ri-lg w-5 h-5 flex items-center justify-center"></i>
+Get Premium
+</button>
+</div>
+<div class="mt-8 app-screenshot">
+<img src="https://readdy.ai/api/search-image?query=smartphone%20displaying%20an%20emergency%20SOS%20app%20interface%20with%20red%20alert%20button%2C%20dark%20theme%20UI%2C%20high-tech%20design%2C%20realistic%20phone%20mockup%2C%20professional%20app%20screenshot%2C%20security%20app%20interface%2C%20emergency%20contact%20list%20visible%2C%20location%20tracking%20feature%20shown%2C%20modern%20mobile%20UI%20design%2C%20detailed%20screen&width=300&height=600&seq=123&orientation=portrait" alt="RakshakX App Screenshot" class="mx-auto rounded-xl border border-gray-700 max-w-[250px]">
+</div>
+<div class="mt-8 bg-gray-800/50 backdrop-blur-sm rounded-lg py-3 px-5 inline-flex items-center">
+<i class="ri-shield-check-line ri-lg text-primary mr-2 w-6 h-6 flex items-center justify-center"></i>
+<span>Join 20,000+ users who trust RakshakX</span>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="px-4 py-12 bg-[#0A0A0A]">
+<h2 class="text-2xl font-bold text-center mb-8">Packed with Life-Saving Features</h2>
+<div class="grid grid-cols-2 gap-4">
+<!-- Feature 1 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full mb-3">
+<i class="ri-alarm-warning-line text-primary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">One-Tap SOS</h3>
+<p class="text-gray-400 text-sm">Power Button, Voice, or Pattern Lock trigger</p>
+</div>
+<!-- Feature 2 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full mb-3">
+<i class="ri-shut-down-line text-secondary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">Fake Power Off</h3>
+<p class="text-gray-400 text-sm">Appears off while still tracking</p>
+</div>
+<!-- Feature 3 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full mb-3">
+<i class="ri-camera-line text-primary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">Dual Camera</h3>
+<p class="text-gray-400 text-sm">Auto-records video & audio evidence</p>
+</div>
+<!-- Feature 4 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full mb-3">
+<i class="ri-map-pin-line text-secondary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">Real-time Location</h3>
+<p class="text-gray-400 text-sm">Alerts nearby users for help</p>
+</div>
+<!-- Feature 5 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full mb-3">
+<i class="ri-currency-line text-primary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">One-Time Payment</h3>
+<p class="text-gray-400 text-sm">No recurring subscriptions</p>
+</div>
+<!-- Feature 6 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full mb-3">
+<i class="ri-battery-low-line text-secondary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">Low Battery Mode</h3>
+<p class="text-gray-400 text-sm">Works even at critical battery</p>
+</div>
+<!-- Feature 7 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/20 rounded-full mb-3">
+<i class="ri-bank-card-line text-primary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">UPI Supported</h3>
+<p class="text-gray-400 text-sm">Paytm/PhonePe compatible</p>
+</div>
+<!-- Feature 8 -->
+<div class="feature-card bg-gray-800/30 rounded-lg p-4 border border-gray-700 transition-all duration-300">
+<div class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full mb-3">
+<i class="ri-cloud-line text-secondary ri-lg"></i>
+</div>
+<h3 class="font-semibold mb-1">Secure Backup</h3>
+<p class="text-gray-400 text-sm">Firebase cloud protection</p>
+</div>
+</div>
+</section>
+<!-- AI Assistant Section -->
+<section class="px-4 py-12 bg-[#121212] relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-10">
+<div class="grid-pattern absolute inset-0"></div>
+</div>
+<div class="relative z-10">
+<h2 class="text-2xl font-bold text-center mb-8">Meet RakshakBot – India's First AI Safety Assistant</h2>
+<div class="flex flex-col items-center mb-6">
+<div class="w-24 h-24 bg-secondary/20 rounded-full flex items-center justify-center mb-4 glow-blue">
+<i class="ri-robot-line text-secondary ri-3x"></i>
+</div>
+<div class="chat-bubbles space-y-3 max-w-[300px]">
+<div class="bg-gray-800 rounded-t-lg rounded-br-lg p-3 text-sm">
+<p>How can I help you in an emergency?</p>
+</div>
+<div class="bg-secondary/20 rounded-t-lg rounded-bl-lg p-3 text-sm ml-auto">
+<p>What should I do if I feel unsafe?</p>
+</div>
+<div class="bg-gray-800 rounded-t-lg rounded-br-lg p-3 text-sm">
+<p>Press power button 3 times to activate SOS mode. I'll alert your emergency contacts.</p>
+</div>
+</div>
+</div>
+<div class="bg-[#0A0A0A] rounded-lg p-5 border border-gray-800">
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/20 rounded-full mr-3 mt-0.5">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-medium">Emergency Step-by-Step Guidance</h3>
+<p class="text-gray-400 text-sm">Clear instructions during critical situations</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/20 rounded-full mr-3 mt-0.5">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-medium">Multi-language Support</h3>
+<p class="text-gray-400 text-sm">Works in Hindi, Tamil, Bengali & more</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/20 rounded-full mr-3 mt-0.5">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-medium">Voice & Text Commands</h3>
+<p class="text-gray-400 text-sm">Hands-free operation when needed</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center bg-secondary/20 rounded-full mr-3 mt-0.5">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<div>
+<h3 class="font-medium">Offline Functionality</h3>
+<p class="text-gray-400 text-sm">Basic features work without internet</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 justify-center mt-6">
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">Hindi</span>
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">Tamil</span>
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">Bengali</span>
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">Telugu</span>
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">Marathi</span>
+<span class="bg-gray-800 text-xs px-3 py-1.5 rounded-full">+7 more</span>
+</div>
+</div>
+</section>
+<!-- Why RakshakX Section -->
+<section class="px-4 py-12 bg-[#0A0A0A]">
+<h2 class="text-2xl font-bold text-center mb-8">Why RakshakX is India's No.1 SOS App</h2>
+<div class="grid grid-cols-1 gap-5">
+<div class="bg-gradient-to-r from-primary/20 to-secondary/20 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full mr-4">
+<i class="ri-user-heart-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-lg">Trusted by 20,000+ Users</h3>
+<p class="text-gray-300 text-sm">Across 28 states and 8 union territories</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3 mb-4">
+<div class="bg-gray-800/50 rounded p-2 text-center">
+<p class="text-lg font-bold text-primary">98%</p>
+<p class="text-xs text-gray-400">Positive Reviews</p>
+</div>
+<div class="bg-gray-800/50 rounded p-2 text-center">
+<p class="text-lg font-bold text-primary">4.8</p>
+<p class="text-xs text-gray-400">App Rating</p>
+</div>
+<div class="bg-gray-800/50 rounded p-2 text-center">
+<p class="text-lg font-bold text-primary">3min</p>
+<p class="text-xs text-gray-400">Avg Response</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-full mr-4">
+<i class="ri-flag-line text-secondary ri-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-lg">Made in India, For India</h3>
+<p class="text-gray-300 text-sm">Designed by Indian students with local expertise</p>
+</div>
+</div>
+<p class="text-gray-400 text-sm mb-4">Our team understands India's unique safety challenges, from urban metros to rural villages. We've built RakshakX to work seamlessly across diverse environments.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary/20 text-xs px-3 py-1.5 rounded-full text-secondary">Made in India</span>
+<span class="bg-secondary/20 text-xs px-3 py-1.5 rounded-full text-secondary">Data in India</span>
+<span class="bg-secondary/20 text-xs px-3 py-1.5 rounded-full text-secondary">Indian Support</span>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full mr-4">
+<i class="ri-24-hours-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="font-semibold text-lg">24/7 Reliability</h3>
+<p class="text-gray-300 text-sm">Works even without internet connection</p>
+</div>
+</div>
+<div class="bg-[#121212] rounded p-4 mb-4">
+<div class="flex items-start mb-3">
+<i class="ri-wifi-off-line text-primary mr-2 mt-1"></i>
+<div>
+<h4 class="font-medium">Offline Mode</h4>
+<p class="text-gray-400 text-xs">Core SOS functions work without internet</p>
+</div>
+</div>
+<div class="flex items-start">
+<i class="ri-battery-low-line text-primary mr-2 mt-1"></i>
+<div>
+<h4 class="font-medium">Low Power Mode</h4>
+<p class="text-gray-400 text-xs">Optimized to work even at 5% battery</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="px-4 py-12 bg-[#121212]">
+<h2 class="text-2xl font-bold text-center mb-8">What Our Users Say</h2>
+<div class="space-y-4">
+<div class="bg-gray-800/30 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+<span class="font-semibold">PK</span>
+</div>
+<div>
+<h3 class="font-medium">Priya Kapoor</h3>
+<div class="flex text-yellow-400 text-xs">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 text-sm">"As someone who commutes late at night in Delhi, RakshakX gives me peace of mind. The fake power-off feature is genius! My family can track me in real-time, and I feel safer knowing help is just one button away."</p>
+</div>
+<div class="bg-gray-800/30 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center mr-3">
+<span class="font-semibold">RG</span>
+</div>
+<div>
+<h3 class="font-medium">Rahul Gupta</h3>
+<div class="flex text-yellow-400 text-xs">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 text-sm">"I got this for my daughter who's in college. When she had a medical emergency, RakshakX alerted me immediately with her exact location. The response time was incredible. Worth every rupee for the premium version."</p>
+</div>
+<div class="bg-gray-800/30 rounded-lg p-5 border border-gray-800">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
+<span class="font-semibold">SM</span>
+</div>
+<div>
+<h3 class="font-medium">Sunita Mehta</h3>
+<div class="flex text-yellow-400 text-xs">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+<p class="text-gray-300 text-sm">"The Hindi voice commands are a game-changer for my parents who aren't tech-savvy. Now they can use it easily. Also love that it works in areas with poor network - essential for our trips to my village in Uttarakhand."</p>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="px-4 py-12 bg-[#0A0A0A]">
+<h2 class="text-2xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+<div class="space-y-4" id="faq-container">
+<div class="bg-gray-800/30 rounded-lg border border-gray-800 overflow-hidden">
+<button class="faq-toggle w-full text-left p-4 flex justify-between items-center" data-target="faq-1">
+<span class="font-medium">How does the SOS trigger work?</span>
+<i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+</button>
+<div id="faq-1" class="faq-content hidden px-4 pb-4 pt-0">
+<p class="text-gray-300 text-sm">RakshakX offers multiple SOS triggers: press the power button 3 times quickly, use a voice command like "Help me", or draw a pattern on your lock screen. Once triggered, it alerts your emergency contacts with your real-time location, starts recording audio/video, and alerts nearby RakshakX users who can assist.</p>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg border border-gray-800 overflow-hidden">
+<button class="faq-toggle w-full text-left p-4 flex justify-between items-center" data-target="faq-2">
+<span class="font-medium">What's included in the Premium version?</span>
+<i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+</button>
+<div id="faq-2" class="faq-content hidden px-4 pb-4 pt-0">
+<p class="text-gray-300 text-sm">Premium includes: unlimited emergency contacts (vs 3 in free), advanced AI assistant with all Indian languages, fake power-off mode, extended cloud storage for evidence, priority emergency response, and 24/7 dedicated support. It's a one-time payment of ₹499 with no recurring fees.</p>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg border border-gray-800 overflow-hidden">
+<button class="faq-toggle w-full text-left p-4 flex justify-between items-center" data-target="faq-3">
+<span class="font-medium">Does it work without internet?</span>
+<i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+</button>
+<div id="faq-3" class="faq-content hidden px-4 pb-4 pt-0">
+<p class="text-gray-300 text-sm">Yes! RakshakX has an offline mode that works without internet. It can still trigger local alarms, record evidence to your device, and send SMS alerts (using cellular network). When internet connectivity returns, it syncs all data and sends more detailed alerts with location history.</p>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg border border-gray-800 overflow-hidden">
+<button class="faq-toggle w-full text-left p-4 flex justify-between items-center" data-target="faq-4">
+<span class="font-medium">Is my data secure and private?</span>
+<i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+</button>
+<div id="faq-4" class="faq-content hidden px-4 pb-4 pt-0">
+<p class="text-gray-300 text-sm">Absolutely. RakshakX uses end-to-end encryption for all data. Your information is stored on secure Indian servers in compliance with data protection laws. We never sell your data to third parties. You control who sees your location and when, and can delete your data at any time.</p>
+</div>
+</div>
+<div class="bg-gray-800/30 rounded-lg border border-gray-800 overflow-hidden">
+<button class="faq-toggle w-full text-left p-4 flex justify-between items-center" data-target="faq-5">
+<span class="font-medium">How much battery does it use?</span>
+<i class="ri-arrow-down-s-line transition-transform duration-300"></i>
+</button>
+<div id="faq-5" class="faq-content hidden px-4 pb-4 pt-0">
+<p class="text-gray-300 text-sm">RakshakX is optimized for minimal battery usage. In normal mode, it uses about 3-5% of battery per day. When in emergency mode, it optimizes power to extend battery life while maintaining critical functions. The low-power mode activates automatically when your battery is below 15%.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="px-4 py-12 bg-[#121212]">
+<h2 class="text-2xl font-bold text-center mb-8">Contact Us</h2>
+<form class="bg-gray-800/30 rounded-lg p-5 border border-gray-800 mb-6">
+<div class="mb-4">
+<label for="name" class="block text-sm font-medium mb-1">Your Name</label>
+<input type="text" id="name" class="w-full bg-gray-900 border-none rounded p-3 text-white" placeholder="Enter your name">
+</div>
+<div class="mb-4">
+<label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+<input type="email" id="email" class="w-full bg-gray-900 border-none rounded p-3 text-white" placeholder="Enter your email">
+</div>
+<div class="mb-4">
+<label for="message" class="block text-sm font-medium mb-1">Your Message</label>
+<textarea id="message" rows="4" class="w-full bg-gray-900 border-none rounded p-3 text-white" placeholder="How can we help you?"></textarea>
+</div>
+<button type="submit" class="!rounded-button w-full bg-primary hover:bg-primary/90 text-white py-3 font-semibold">Send Message</button>
+</form>
+<div class="grid grid-cols-2 gap-4">
+<a href="#" class="bg-gray-800/30 rounded-lg p-4 border border-gray-800 flex flex-col items-center text-center">
+<i class="ri-mail-line text-primary ri-xl mb-2 w-10 h-10 flex items-center justify-center"></i>
+<h3 class="font-medium text-sm">Email Us</h3>
+<p class="text-gray-400 text-xs">support@rakshakx.in</p>
+</a>
+<a href="#" class="bg-gray-800/30 rounded-lg p-4 border border-gray-800 flex flex-col items-center text-center">
+<i class="ri-customer-service-2-line text-primary ri-xl mb-2 w-10 h-10 flex items-center justify-center"></i>
+<h3 class="font-medium text-sm">Call Us</h3>
+<p class="text-gray-400 text-xs">+91 8800-RAKSHAK</p>
+</a>
+</div>
+</section>
+<!-- Download CTA -->
+<section class="px-4 py-8 bg-gradient-to-r from-primary/80 to-secondary/80 relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="grid-pattern absolute inset-0"></div>
+</div>
+<div class="relative z-10 text-center">
+<h2 class="text-2xl font-bold mb-3">Download RakshakX Today</h2>
+<p class="text-white/80 mb-6">Join 20,000+ Indians who trust RakshakX for their personal safety</p>
+<div class="flex flex-col sm:flex-row gap-3 justify-center">
+<button id="playStoreBtn" class="!rounded-button bg-black/30 backdrop-blur-sm hover:bg-black/50 text-white py-3 px-5 font-semibold flex items-center justify-center gap-2 border border-white/20">
+<i class="ri-google-play-line ri-lg w-6 h-6 flex items-center justify-center"></i>
+Google Play
+</button>
+<a href="#" class="!rounded-button bg-black/30 backdrop-blur-sm hover:bg-black/50 text-white py-3 px-5 font-semibold flex items-center justify-center gap-2 border border-white/20">
+<i class="ri-apple-fill ri-lg w-6 h-6 flex items-center justify-center"></i>
+App Store
+</a>
+</div>
+</section>
+</div>
+<!-- Tab Bar -->
+<div class="fixed bottom-0 w-full bg-[#0A0A0A] border-t border-gray-800 z-50 grid grid-cols-5">
+<a href="#" class="flex flex-col items-center justify-center py-2 text-primary">
+<i class="ri-home-line ri-lg w-6 h-6 flex items-center justify-center"></i>
+<span class="text-xs mt-1">Home</span>
+</a>
+<a href="#" class="flex flex-col items-center justify-center py-2 text-gray-500">
+<i class="ri-information-line ri-lg w-6 h-6 flex items-center justify-center"></i>
+<span class="text-xs mt-1">About</span>
+</a>
+<div class="flex flex-col items-center justify-center py-2">
+<button id="sosButton" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center -mt-5 glow">
+<i class="ri-alarm-warning-fill text-white ri-lg"></i>
+</button>
+<span class="text-xs mt-1 text-primary">SOS</span>
+</div>
+<a href="https://readdy.ai/home/73283f45-8685-436d-a633-a94ffafa57e9/72e5c2dc-4f93-469d-9e80-d43037c2cfac" data-readdy="true" class="flex flex-col items-center justify-center py-2 text-gray-500">
+<i class="ri-price-tag-3-line ri-lg w-6 h-6 flex items-center justify-center"></i>
+<span class="text-xs mt-1">Pricing</span>
+</a>
+<a href="#" class="flex flex-col items-center justify-center py-2 text-gray-500">
+<i class="ri-user-line ri-lg w-6 h-6 flex items-center justify-center"></i>
+<span class="text-xs mt-1">Account</span>
+</a>
+</div>
+<script id="faq-script">
+document.addEventListener('DOMContentLoaded', function() {
+const faqToggles = document.querySelectorAll('.faq-toggle');
+faqToggles.forEach(toggle => {
+toggle.addEventListener('click', function() {
+const targetId = this.getAttribute('data-target');
+const content = document.getElementById(targetId);
+const icon = this.querySelector('i');
+if (content.classList.contains('hidden')) {
+content.classList.remove('hidden');
+icon.style.transform = 'rotate(180deg)';
+} else {
+content.classList.add('hidden');
+icon.style.transform = 'rotate(0)';
+}
+});
+});
+});
+</script>
+<div id="sosConfirmModal" class="fixed inset-0 bg-black/80 z-[70] hidden items-center justify-center backdrop-blur-sm">
+<div class="bg-[#0A0A0A] p-6 rounded-lg border border-gray-800 max-w-[280px] w-full mx-4">
+<div class="text-center mb-6">
+<div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-alarm-warning-fill text-primary ri-2x"></i>
+</div>
+<h3 class="font-semibold text-lg mb-2">Trigger SOS Alert?</h3>
+<p class="text-sm text-gray-400">This will alert your emergency contacts and start recording evidence</p>
+</div>
+<div class="flex gap-3">
+<button id="sosCancelBtn" class="flex-1 !rounded-button bg-gray-800 hover:bg-gray-700 text-white py-3 font-medium">Cancel</button>
+<button id="sosConfirmBtn" class="flex-1 !rounded-button bg-primary hover:bg-primary/90 text-white py-3 font-medium">Confirm SOS</button>
+</div>
+</div>
+</div>
+<div id="sosCountdownModal" class="fixed inset-0 bg-black/80 z-[70] hidden items-center justify-center backdrop-blur-sm">
+<div class="bg-[#0A0A0A] p-6 rounded-lg border border-gray-800 max-w-[280px] w-full mx-4">
+<div class="text-center mb-6">
+<div id="countdownCircle" class="w-20 h-20 rounded-full border-4 border-primary flex items-center justify-center mx-auto mb-4">
+<span id="countdownNumber" class="text-3xl font-bold">5</span>
+</div>
+<h3 class="font-semibold text-lg mb-2">SOS Activating...</h3>
+<p class="text-sm text-gray-400">Tap Cancel to stop</p>
+</div>
+<button id="sosStopBtn" class="w-full !rounded-button bg-gray-800 hover:bg-gray-700 text-white py-3 font-medium">Cancel</button>
+</div>
+</div>
+<div id="sosActiveModal" class="fixed inset-0 bg-primary/10 z-[70] hidden">
+<div class="fixed top-0 w-full p-4 bg-primary text-white text-center">
+<div class="flex items-center justify-center gap-2">
+<i class="ri-alarm-warning-fill ri-lg"></i>
+<span class="font-semibold">SOS Active - Broadcasting Location</span>
+</div>
+</div>
+</div>
+<div id="qrModal" class="fixed inset-0 bg-black/80 z-[60] hidden items-center justify-center backdrop-blur-sm">
+<div class="bg-[#0A0A0A] p-6 rounded-lg border border-gray-800 max-w-[280px] w-full mx-4">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-semibold text-lg">Download RakshakX</h3>
+<button id="closeQrModal" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-800">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<div class="bg-gray-800/50 p-8 rounded-lg mb-4 flex flex-col items-center justify-center">
+<i class="ri-timer-line text-primary ri-3x mb-3"></i>
+<h4 class="text-lg font-semibold mb-1">Coming Soon</h4>
+<p class="text-sm text-gray-400 text-center">RakshakX will be available on Google Play Store shortly</p>
+</div>
+</div>
+</div>
+<script id="sos-script">
+document.addEventListener('DOMContentLoaded', function() {
+const sosButton = document.getElementById('sosButton');
+const sosConfirmModal = document.getElementById('sosConfirmModal');
+const sosCountdownModal = document.getElementById('sosCountdownModal');
+const sosActiveModal = document.getElementById('sosActiveModal');
+const sosCancelBtn = document.getElementById('sosCancelBtn');
+const sosConfirmBtn = document.getElementById('sosConfirmBtn');
+const sosStopBtn = document.getElementById('sosStopBtn');
+const countdownNumber = document.getElementById('countdownNumber');
+let countdownInterval;
+let countdown = 5;
+function showModal(modalId) {
+document.getElementById(modalId).classList.remove('hidden');
+document.getElementById(modalId).classList.add('flex');
+}
+function hideModal(modalId) {
+document.getElementById(modalId).classList.add('hidden');
+document.getElementById(modalId).classList.remove('flex');
+}
+function resetCountdown() {
+clearInterval(countdownInterval);
+countdown = 5;
+countdownNumber.textContent = countdown;
+}
+function startSOS() {
+hideModal('sosCountdownModal');
+showModal('sosActiveModal');
+}
+sosButton.addEventListener('click', () => {
+showModal('sosConfirmModal');
+});
+sosCancelBtn.addEventListener('click', () => {
+hideModal('sosConfirmModal');
+});
+sosConfirmBtn.addEventListener('click', () => {
+hideModal('sosConfirmModal');
+showModal('sosCountdownModal');
+countdownInterval = setInterval(() => {
+countdown--;
+countdownNumber.textContent = countdown;
+if (countdown <= 0) {
+resetCountdown();
+startSOS();
+}
+}, 1000);
+});
+sosStopBtn.addEventListener('click', () => {
+resetCountdown();
+hideModal('sosCountdownModal');
+});
+});
+</script>
+<script id="form-script">
+document.addEventListener('DOMContentLoaded', function() {
+const playStoreBtn = document.getElementById('playStoreBtn');
+const downloadNowBtn = document.querySelector('.bg-primary.glow');
+const qrModal = document.getElementById('qrModal');
+const closeQrModal = document.getElementById('closeQrModal');
+[playStoreBtn, downloadNowBtn].forEach(btn => {
+if(btn) {
+btn.addEventListener('click', function() {
+qrModal.classList.remove('hidden');
+qrModal.classList.add('flex');
+});
+}
+});
+closeQrModal.addEventListener('click', function() {
+qrModal.classList.add('hidden');
+qrModal.classList.remove('flex');
+});
+qrModal.addEventListener('click', function(e) {
+if (e.target === qrModal) {
+qrModal.classList.add('hidden');
+qrModal.classList.remove('flex');
+}
+});
+const contactForm = document.querySelector('form');
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+if (!nameInput.value || !emailInput.value || !messageInput.value) {
+// Create and show error message
+const errorDiv = document.createElement('div');
+errorDiv.className = 'bg-red-500/20 text-red-500 p-3 rounded mb-4';
+errorDiv.textContent = 'Please fill in all fields';
+if (!document.querySelector('.bg-red-500')) {
+contactForm.insertBefore(errorDiv, contactForm.firstChild);
+setTimeout(() => {
+errorDiv.remove();
+}, 3000);
+}
+return;
+}
+// Success message
+const successDiv = document.createElement('div');
+successDiv.className = 'bg-green-500/20 text-green-500 p-3 rounded mb-4';
+successDiv.textContent = 'Message sent successfully! We\'ll get back to you soon.';
+contactForm.insertBefore(successDiv, contactForm.firstChild);
+// Reset form
+contactForm.reset();
+setTimeout(() => {
+successDiv.remove();
+}, 3000);
+});
+});
+</script>
+</body>
+</html>
